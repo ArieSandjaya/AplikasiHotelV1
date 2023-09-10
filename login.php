@@ -5,7 +5,6 @@ session_start();
 require('config/database.php');
 
 if(isset($_POST['username'],$_POST['password'])){
-
 		$hash=md5($_POST['password']);
 		$record=$database->pdo->prepare("SELECT * FROM user WHERE username=:username AND password=:password");
 		$record->bindParam(':username',$_POST['username']);

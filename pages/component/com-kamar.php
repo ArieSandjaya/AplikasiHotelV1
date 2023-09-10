@@ -108,7 +108,6 @@ if(!empty($_GET['kamar-tipe'])){
 
 // Tambah Kamar & Tipe Kamar
 if(isset($_POST['kamar-add'])){
-
 	$database->insert('kamar',[
 		'nomor_kamar'=>$_POST['nomor_kamar'],
 		'id_kamar_tipe'=>$_POST['id_kamar_tipe'],

@@ -1,10 +1,13 @@
+
+
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
+<div class="sidebar">
 <a href="index3.html" class="brand-link">
       <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
       <span class="brand-text font-weight-light">UIN HOTEL</span>
     </a>
 <nav class="mt-2">
-        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="true">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
@@ -218,4 +221,5 @@
           </li>
         </ul>
       </nav>
-</aside>
+          </div>
+    </aside>

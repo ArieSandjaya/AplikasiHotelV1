@@ -38,14 +38,15 @@ include('config/app.php');
   <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
   <!-- summernote -->
   <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
+
 </head>
 <body class="hold-transition sidebar-mini layout-fixed text-sm">
 <div class="wrapper">
 
-  <!-- Preloader -->
+  <!-- Preloader 
   <div class="preloader flex-column justify-content-center align-items-center">
     <img class="animation__shake" src="dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
-  </div>
+  </div>-->
 
   <!-- Navbar -->
   <nav class="main-header navbar navbar-expand navbar-white navbar-light">
@@ -247,9 +248,24 @@ include('config/app.php');
 <script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
 <!-- AdminLTE App -->
 <script src="dist/js/adminlte.js"></script>
+
 <!-- AdminLTE for demo purposes -->
-<script src="dist/js/demo.js"></script>
+<!-- <script src="dist/js/demo.js"></script> -->
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="dist/js/pages/dashboard.js"></script>
+<script type="text/javascript">
+    /** add active class and stay opened when selected */
+      var url = window.location;
+
+      // for sidebar menu entirely but not cover treeview
+      $('ul.nav-sidebar a').filter(function() {
+          return this.href == url;
+      }).addClass('active');
+
+      // for treeview
+      $('ul.nav-treeview a').filter(function() {
+          return this.href == url;
+      }).parentsUntil(".nav-sidebar > .nav-treeview").addClass('menu-open').prev('a').addClass('active');
+  </script>
 </body>
 </html>

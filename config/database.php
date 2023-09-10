@@ -652,7 +652,7 @@ class medoo
                     '" (' .
                     implode(", ", $columns) .
                     ") VALUES (" .
-                    implode($values, ", ") .
+                    implode(", ",$values) .
                     ")"
             );
             $lastId[] = $this->pdo->lastInsertId();

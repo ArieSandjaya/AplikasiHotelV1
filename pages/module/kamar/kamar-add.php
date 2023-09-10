@@ -3,7 +3,7 @@ include('./pages/component/com-kamar.php');
 ?>
 
 <section class="content-header">
-	<h1>Tambah Kamar <span class="small">Tambah data kamar baru</span></h1>
+	<h1>Add Room <span class="small">Add New Rooms</span></h1>
 </section>
 
 <section class="content">
